@@ -1,4 +1,17 @@
-install:
-- apt-get -y install quilt parted realpath qemu-user-static debootstrap zerofree pxz zipdosfstools bsdtar libcap2-bin grep rsync
+apt:
+  packages:
+  - quilt
+  - parted
+  - realpath
+  - qemu-user-static
+  - debootstrap
+  - zerofree
+  - pxz
+  - zipdosfstools
+  - bsdtar
+  - libcap2-bin
+  - grep
+  - rsync
+install: true
 script:
 - echo "script"
